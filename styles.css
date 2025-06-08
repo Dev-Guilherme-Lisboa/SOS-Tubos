@@ -100,7 +100,7 @@ img {
     background-color: #245425;
 }
 
-/* Cabeçalho/Hero */
+/* Cabeçalho */
 .hero {
     background: linear-gradient(to right, #2f6e31, #1b5e20);
     color: white;
@@ -284,6 +284,11 @@ nav {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.process-image.no-border {
+    box-shadow: none;
+    border-radius: 0;
+}
+
 .process-content {
     width: 55%;
     padding: 0 30px;
@@ -345,10 +350,9 @@ nav {
 }
 
 /* Contato */
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contact-details {
@@ -371,28 +375,18 @@ nav {
     margin-bottom: 5px;
 }
 
-.form-group {
-    margin-bottom: 20px;
+.cta-button {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
+.cta-button .btn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+.cta-button .btn i {
+    margin-right: 10px;
 }
 
 /* Rodapé */
@@ -430,10 +424,19 @@ nav {
     margin-left: 15px;
     transition: background-color 0.3s;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .social-link:hover {
     background-color: #2f6e31;
+}
+
+.social-link:first-child:hover {
+    background-color: #25D366;
+}
+
+.social-link:last-child:hover {
+    background-color: #E1306C;
 }
 
 .footer-bottom {
