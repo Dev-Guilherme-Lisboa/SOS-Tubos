@@ -16,8 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <header class="hero">
+    <!-- Navbar fixa -->
+    <div class="navbar">
         <div class="container">
             <nav>
                 <div class="logo">SOS Tubos</div>
@@ -33,7 +33,12 @@
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="hero">
+        <div class="container">
             <div class="hero-content">
                 <h1>Tubos de Papelão Reciclado</h1>
                 <p>Soluções sustentáveis para sua empresa</p>
@@ -306,6 +311,29 @@
                         </a>
                     </div>
                 </div>
+                
+                <div class="contact-form">
+                    <h3>Envie uma mensagem</h3>
+                    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="YOUR-ACCESS-KEY-HERE">
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <input type="text" id="assunto" name="assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone (opcional)</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-light">Enviar Mensagem</button>
+                        
+                        <input type="hidden" name="redirect" value="https://sostubos.com.br/obrigado.html">
+                        <input type="hidden" name="subject" value="Nova mensagem do site SOS Tubos">
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -317,10 +345,10 @@
                 <div class="footer-brand">
                     <div class="logo">SOS Tubos</div>
                     <p>Soluções sustentáveis em tubos de papelão</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://wa.me/5511975960393" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.instagram.com/ecotubosdepapelao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <div class="social-links">
+                        <a href="https://wa.me/5511975960393" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/ecotubosdepapelao?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">

@@ -1,8 +1,10 @@
-// Menu mobile toggle
+// Menu mobile toggle e navbar fixa
 document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
+    const navbar = document.querySelector('.navbar');
     
+    // Menu toggle para mobile
     menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('active');
     });
@@ -22,6 +24,15 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (!isClickInsideMenu && !isClickOnToggle && navMenu.classList.contains('active')) {
             navMenu.classList.remove('active');
+        }
+    });
+    
+    // Efeito de navbar ao scroll
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
         }
     });
     
@@ -63,4 +74,18 @@ document.addEventListener('DOMContentLoaded', function() {
     // Executar animação inicial e ao scroll
     animateOnScroll();
     window.addEventListener('scroll', animateOnScroll);
+    
+    // Validação do formulário de contato
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+            const assunto = document.getElementById('assunto').value;
+            const mensagem = document.getElementById('mensagem').value;
+            
+            if (!assunto || !mensagem) {
+                e.preventDefault();
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            }
+        });
+    }
 });
