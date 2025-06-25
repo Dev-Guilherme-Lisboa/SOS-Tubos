@@ -307,7 +307,6 @@ nav {
 .process-content {
     width: 55%;
     padding: 0 30px;
-    text-align: center; /* Centralizar textos na aba de processos */
 }
 
 .process-step.reverse {
@@ -474,15 +473,8 @@ nav {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-bottom: 30px;
-    flex-wrap: wrap;
-}
-
-.footer-brand {
-    flex: 1;
-    min-width: 200px;
-    margin-bottom: 20px;
 }
 
 .footer-brand p {
@@ -492,8 +484,6 @@ nav {
 
 .social-links {
     display: flex;
-    justify-content: end;
-    margin-bottom: 20px;
 }
 
 .social-link {
@@ -521,17 +511,6 @@ nav {
 
 .social-link:last-child:hover {
     background-color: #E1306C;
-}
-
-/* Formulário no Footer */
-.footer-form {
-    flex: 1;
-    min-width: 300px;
-}
-
-.footer-form h3 {
-    margin-bottom: 20px;
-    color: white;
 }
 
 .footer-bottom {
