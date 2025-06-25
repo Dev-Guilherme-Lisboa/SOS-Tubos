@@ -276,7 +276,7 @@ nav {
     font-size: 1.5rem;
 }
 
-/* Processo */
+/* Processos */
 .process-steps {
     max-width: 1000px;
     margin: 0 auto;
@@ -321,7 +321,6 @@ nav {
     padding: 0 0 0 30px;
 }
 
-/* Ajuste para a segunda imagem do processo */
 .process-image img {
     width: 100%;
     height: auto;
@@ -405,20 +404,6 @@ nav {
 .contact-label {
     font-weight: 600;
     margin-bottom: 5px;
-}
-
-.cta-button {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.cta-button .btn {
-    font-size: 1.2rem;
-    padding: 15px 30px;
-}
-
-.cta-button .btn i {
-    margin-right: 10px;
 }
 
 /* Formulário de contato */
@@ -537,10 +522,9 @@ nav {
     
     .process-content {
         padding: 30px 0 0 0 !important;
-        text-align: center; /* Manter centralizado no mobile */
+        text-align: center;
     }
     
-    /* Ajuste para a segunda imagem do processo no mobile */
     .process-image img {
         max-height: 300px;
         width: auto;
@@ -573,7 +557,7 @@ nav {
     
     .menu-toggle {
         display: block;
-        color: white; /* Garantir que o menu hambúrguer seja branco no mobile */
+        color: white;
     }
     
     .nav-menu {
@@ -614,11 +598,6 @@ nav {
     .social-links {
         margin-top: 20px;
         justify-content: center;
-    }
-    
-    .footer-form {
-        margin-top: 30px;
-        text-align: left;
     }
 }
 

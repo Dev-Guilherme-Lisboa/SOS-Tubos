@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             const assunto = document.getElementById('assunto').value;
+            const telefone = document.getElementById('telefone').value;
             const mensagem = document.getElementById('mensagem').value;
             
             if (!assunto || !mensagem) {
